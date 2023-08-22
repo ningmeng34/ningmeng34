@@ -1,0 +1,21 @@
+class Children extends Parent{
+
+    static {
+        System.out.println("Children static block");
+    }
+
+    {
+        System.out.println("Children not static block");
+    }
+
+    public Children(){
+        System.out.println("Children constructor method");
+    }
+
+
+    public void getValue(){
+        //this.setName("lisi");
+        //this.setAge(51);
+        System.out.println(this.getName() + this.getAge());
+    }
+}
